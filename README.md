@@ -1,9 +1,10 @@
 # Weather Prediction in Australia
-## 데이터셋
+## 📌 Data Collection
 - 호주 날씨 데이터 (145460, 23)
-- 타겟 : RainTomorrow (내일 비가 오는지 여부)
+- [데이터 출처: Kaggle](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package)
 - Columns
-  - 'Date' : 날짜,
+![](https://github.com/DAWUNHAN/Weather-Predict/blob/master/img/dataset.png?raw=true)
+  <!-- - 'Date' : 날짜,
   - 'Location' : 장소,
   - 'MinTemp' : 최저 온도 (섭씨),
   - 'MaxTemp' : 최고 온도 (섭씨),
@@ -25,14 +26,23 @@
   - 'Temp9am' : 오전 9시 온도 (섭씨),
   - 'Temp3pm' : 오후 3시 온도 (섭씨),
   - 'RainToday' : 오늘 강우 여부 (Boolean),
-  - 'RainTomorrow' : 내일 강우 여부 (Boolean)
+  - 'RainTomorrow' : 내일 강우 여부 (Boolean) -->
+- 타겟 : RainTomorrow (내일 비가 오는지 여부)
 
-## 사용한 머신러닝 모델
+## 📌 Data Preprocessing
+- 결측치 제거
+  - 50,000 이상의 결측치 갖는 컬럼 제거 : ['Evaporation', 'Sunshine', 'Cloud9am', 'Cloud3pm']
+  - 타겟에 결측치 있는 row 삭제
+- 컬럼 생성
+  - 평균 습도, 평균 기온 컬럼 생성
+  - 썸머 타임을 기준으로 여름과 non-여름 계절 구분
+
+## 📌 사용한 머신러닝 모델
 - Random Forest
 - XGBoost Classifier
 - LightGBM Classifier
 
-## 발표 자료
+## 📌 발표 자료
 ![](https://github.com/DAWUNHAN/Weather-Predict/blob/master/img/01.jpg?raw=true)
 ![](https://github.com/DAWUNHAN/Weather-Predict/blob/master/img/02.jpg?raw=true)
 ![](https://github.com/DAWUNHAN/Weather-Predict/blob/master/img/03.jpg?raw=true)
