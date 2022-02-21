@@ -1,4 +1,7 @@
 # Weather Prediction in Australia
+## 📌 발표 영상
+[![호주날씨예측](https://img.youtube.com/vi/rIwDuQyhjqo/0.jpg)](https://youtu.be/rIwDuQyhjqo)
+
 ## 📌 Data Collection
 - 호주 날씨 데이터 (145460, 23)
 - [데이터 출처: Kaggle](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package)
